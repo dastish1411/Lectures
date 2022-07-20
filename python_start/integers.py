@@ -46,6 +46,18 @@ math.sqrt(25) # 5
 # math.factorial(5) # 1 * 2 * 3 * 4 * 5 = 120
 # print(math.pi)
 
-num1 = (input('Введите первое число:'))
-num2 = (input("Введите второе число:"))
-print("Результат:", int(num1) + int(num2))
+# num1 = (input('Введите первое число:'))
+# num2 = (input("Введите второе число:"))
+# print("Результат:", int(num1) + int(num2))
+
+# x = 1
+# x + 1
+# print(x) # 1
+
+# x = 2
+# x = x + 1
+# print(x) # 3
+
+# x = 3
+# x += 1 # x = x + 1
+# print(x) # 4
