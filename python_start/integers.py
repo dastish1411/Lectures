@@ -61,3 +61,12 @@ math.sqrt(25) # 5
 # x = 3
 # x += 1 # x = x + 1
 # print(x) # 4
+
+# num1 = 10
+# num2 = 20
+# num1 > num2 # False
+# num1 < num2 # True
+# num1 == num2 # False
+# num1 != num2 # True
+# num1 <= num2 # True
+# num1 >= num2 # False

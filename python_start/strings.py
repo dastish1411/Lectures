@@ -65,10 +65,80 @@ str7 = 'hello world'
 
 # print('*'.join(['hello','world','bye'])) # hello*world*bye -
 # соединяет переданный список строк по указанной строке  
-str8 = 'asdasd'
+# str8 = 'asdasd'
 # print(str8.strip(symbol)) # убирает указанной символ в строке с двух сторон,
 # если не указан символ, по умолчанию - пробел 
-str8.lstrip() - # - убирает пробелы слева 
-str8.rstrip() - # - убирает пробелы справа
+# str8.lstrip() - # - убирает пробелы слева 
+# str8.rstrip() - # - убирает пробелы справа
 
-print(str8.isalpha()) # 
+""" Методы проверки """
+
+string = 'My test string 123'
+# print(string.isdigit()) # False - проверяет на цифры 
+# print(string.isalpha()) # False - проверяет на буквы
+# print(string.isalnum()) # False - проверяет на буквы и цифры
+# print(string.isspace()) # False - проверяет на пробелы
+# print(string.islower())  
+# print(string.isupper())
+# print(string.isendswith('123'))
+# print(string.startswith('My'))
+# print(string.islower())
+# print(string.islower())
+
+# str1 = 'apple'
+# str2 = 'hello'
+# print(str1 > str2)
+# ord('a') # 97
+# chr(97) # 'a'
+# # ASCII 
+
+# a = 'abcde'
+# b = 'abced'
+# print(sorted(a))
+# print(sorted(b))
+
+""" Форматирование/интерполяция строк """
+# stat = 'Привет, Фархад! Приглашаю тебя на праздник!'
+
+# name = input()
+# # %
+# # str5 = 'Привет, %s!' % name
+# # print(str5)
+# # str6 = 'Привет, {}'.format(name)
+# # print(str6)
+# place = input()
+# str7 = f'Hello {name}! Welcome to {place}'
+# print(str7)
+
+# Форматирование строк - подстановка переменных в строку, создание динамической строки
+
+""" Экранирование """
+
+# a = 'I\'m student'
+# b = 'Идет бычок качается,\n\tВздыхает на ходу'
+# print(b)
+# \n - newline
+# \t - tabular
+
+# str8 = r'This is test string\n\t\n'
+# print(str8)
+# # raw
+
+# windows_path = r'Users\Documents\\new_folder'
+# print(windows_path) 
+
+# string = 'Hello world'
+# string2 = 'ell'
+# print(string2 in string) # True - проверяет наличие 
+
+""" Помощник для метода """
+
+# dir(object)
+# str1 = 'hello'
+# print(dir(str1)) # dir - принимает обьект и показывает все его методы
+
+hashtags = '#makers#bootcamp#программирование#it#курсы'
+
+result = hashtags.split('#')[1:]
+
+print(result)
