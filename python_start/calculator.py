@@ -8,8 +8,16 @@ elif sign == '-':
     result = num1 - num2
 elif sign == '*':
     result = num1 * num2
-elif sign == '/':
+elif sign == '//':
     result = num1 // num2
+elif sign == '/':
+    result = num1 / num2
+elif sign == '%':
+    result = num1 % num2 
+elif sign == '**':
+    result = num1 ** num2
+else:
+    print("Нету данной операции") 
 print(result)
 
 
