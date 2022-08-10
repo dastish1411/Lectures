@@ -134,3 +134,19 @@ def my_func(num1 ,num2, num3=10):
 #     return counter
 
 # print(my_func(1,2,3,4,'asdasdas',5)) 
+
+''' Homework '''
+
+# def my_func(*args):
+#     counter = 0
+#     for i in args:
+#         try:
+#             counter += i
+#         except TypeError:
+#             print(f'{i} не является числом!')
+#     return counter
+
+# print(my_func(1,2,3,4,'adasd',6))
+
+
+
