@@ -90,8 +90,8 @@
 
 """ Аргументы """
 
-def my_func(num1 ,num2, num3=10):
-    return num1 + num2 + num3
+# def my_func(num1 ,num2, num3=10):
+#     return num1 + num2 + num3
 
 # позиционные 
 # my_func(10, 25, 30) # 65
@@ -150,3 +150,35 @@ def my_func(num1 ,num2, num3=10):
 
 
 
+# def get_count(sentence):
+#     count = 0
+#     for i in sentence:
+#         if i in 'aeiou':
+#             count +=1
+#     return count
+
+
+# a = 'invoker'
+# print(get_count(a))
+
+# def get_count(sentence):
+#     return sum([1 for i in sentence if i in 'aeuio'])
+
+# print(get_count('asdasdasf'))
+
+# def open_or_senior(data):
+#     res = []
+#     for m in data:
+#         if m[0] >= 55 and m[1] > 7:
+#             res.append('Senior')
+#         else:
+#             res.append('Open')
+#     return res
+            
+
+    
+
+# input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+# print(open_or_senior(input))
+                
+                
