@@ -150,3 +150,141 @@ lambda
 # print(listb)
 # print(listc)
 # print(list(zipped_list))
+
+""" all(), any() """
+
+""" all() """
+
+# all(iterable) - возвращает True, если все элементы 
+# внутри последовательности являются True, иначе False
+
+# list_ = [True, True, True]
+# print(all(list_)) # True
+
+# list_1 = [True, False, True]
+# print(all(list_1)) # False
+
+# nums = [9, 7, 1, 5, 6]
+# print(all(nums)) # True
+
+# nums2 = [9, 7, 0, 5, 6]
+# print(all(nums2)) # False
+
+""" False """
+# 0
+# False
+# None
+# ''
+# {}
+# []
+# set()
+# tuple()
+
+# all('hello') # True
+# all((1, 2, 3)) # True
+# all(map(lambda x: x + 10, [1, 2, 3])) # True
+# all(i for i in range(10)) # False
+
+# def all(iterable):
+#     for element in iterable:
+#         if not element:
+#             return False
+#     else:        
+#         return True
+
+""" any() """
+
+# any(iterable) - возвращает True, если хотя бы один элемент 
+# в последовательности True, иначе False
+
+# list_ = [True, True, True]
+# print(any(list_)) # True
+
+# list_2 = [False, True, False]
+# print(any(list_2)) # True
+
+# nums = ['', [], {}, tuple(), set(), False, None, 10]
+# print(any(nums)) # True
+
+# def any(iterable):
+#     for element in iterable:
+#         if element:
+#             return True
+#     return False
+
+# password1 = 'mysup@erpass9wordD'
+# spec_symb = '@#$%^&*'
+
+# def check_password(password):
+#     if not any(i.isupper() for i in password):
+#         raise ValueError('Пароль должен содержать хотя бы 1 символ верхнего регистра')
+#     if not any(i.isdigit() for i in password):
+#         raise ValueError('Пароль должен содержать хотя бы одну цифру')
+#     if not any(i for i in password if i in spec_symb):
+#         raise ValueError('Пароль должен содержать хотя бы один спец символ')
+#     return password
+        
+        
+# print(check_password(password1))
+
+
+""" callable() """
+
+# callable(obj) - принимает объект и проверяет можно ли его вызвать
+
+# def func(x):
+#     return x
+
+# print(callable(func)) # True
+# func(10)
+
+# a = 'string'
+# print(callable(a)) # False
+
+# def func2(x, y):
+#     return x / y
+
+# print(func2(10, 5))
+
+# func3 = lambda x, y: x / y
+# print(callable(func3)) # True
+# print(func3(20, 20))
+
+""" evall() """
+
+# eval() - принимает какое-то утверждение и выполняет его
+# eval('print(10)') 
+
+# num1 = int(input('1: '))
+# num2 = int(input('2: '))
+# operator = input('op')
+# eval(f'print({num1}{operator}{num2}')
+
+""" exec() """
+
+# exec() - выполняет блоки кода 
+# a = """
+# for i in range(1, 10):
+#     print(i)
+# """
+# exec(a)
+
+
+res = map(lambda x: x * 2, range(1, 10))
+# print(set(res))
+# print(list(res))
+
+# def func(x):
+#     return x
+
+# def gen_func(x):
+#     for i in range(x):
+#         yield i
+
+# res = gen_func(8)
+# print(list(res))
+# print(set(res))
+
+# print(list(gen_func(10)))
+# print(set(gen_func(10)))
+
